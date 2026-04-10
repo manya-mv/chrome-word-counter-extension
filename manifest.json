@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Webpage Word Counter & Reading Estimator",
+  "version": "1.0",
+  "description": "Counts words, paragraphs and estimates reading time of the current webpage.",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
