@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Word Counter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 250px;
+            padding: 15px;
+            background-color: #f4f4f4;
+        }
+        h2 {
+            margin-top: 0;
+            text-align: center;
+        }
+        .result {
+            margin: 10px 0;
+            font-size: 14px;
+        }
+        button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Webpage Stats</h2>
+
+    <div class="result" id="words">Words: </div>
+    <div class="result" id="paragraphs">Paragraphs: </div>
+    <div class="result" id="readingTime">Reading Time: </div>
+
+    <button id="analyzeBtn">Analyze Page</button>
+
+    <script src="popup.js"></script>
+</body>
+</html>
